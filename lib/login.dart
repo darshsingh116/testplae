@@ -11,7 +11,7 @@ class signup extends StatelessWidget {
     return MaterialApp(
       title: _title,
       home: Scaffold(
-        appBar: AppBar(title: const Text(_title)),
+        backgroundColor: Colors.black,
         body: const MyStatefulWidget(),
       ),
     );
@@ -35,28 +35,33 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         padding: const EdgeInsets.all(10),
         child: ListView(
           children: <Widget>[
+
+
+            SizedBox(
+              width: 200.0,
+              height: 50.0,
+            ),
+
             Container(
                 alignment: Alignment.center,
                 padding: const EdgeInsets.all(10),
                 child: const Text(
-                  'MatchPlay',
+                  'Log in',
                   style: TextStyle(
-                      color: Colors.blue,
-                      fontWeight: FontWeight.w500,
-                      fontSize: 30),
+                    color: Colors.white,
+                      fontSize: 60),
                 )),
-            Container(
-                alignment: Alignment.center,
-                padding: const EdgeInsets.all(10),
-                child: const Text(
-                  'Login',
-                  style: TextStyle(fontSize: 20),
-                )),
+            SizedBox(
+              width: 200.0,
+              height: 100.0,
+            ),
             Container(
               padding: const EdgeInsets.all(10),
               child: TextField(
                 controller: nameController,
                 decoration: const InputDecoration(
+                  filled: true,
+                  fillColor: Colors.white,
                   border: OutlineInputBorder(),
                   labelText: 'User Name',
                 ),
@@ -68,6 +73,8 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 obscureText: true,
                 controller: passwordController,
                 decoration: const InputDecoration(
+                  filled: true,
+                  fillColor: Colors.white,
                   border: OutlineInputBorder(),
                   labelText: 'Password',
                 ),
@@ -83,6 +90,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 height: 50,
                 padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      primary: Color(11714579),
+                      textStyle: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold)),
                   child: const Text('Login'),
                   onPressed: () {
 
@@ -98,11 +110,14 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             ),
             Row(
               children: <Widget>[
-                const Text('Don\'t have an account?'),
+                const Text('Don\'t have an account?',
+                style: TextStyle(color: Colors.white),),
                 TextButton(
                   child: const Text(
                     'Sign up',
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20),
                   ),
                   onPressed: () {
                     //signup

@@ -6,6 +6,7 @@ class BackgroudCurveWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+
       width: double.infinity,
       height: 650,
       decoration: const ShapeDecoration(
@@ -17,8 +18,8 @@ class BackgroudCurveWidget extends StatelessWidget {
         ),
         gradient: LinearGradient(
           colors: <Color>[
-            Color(0xFF034FA1),
-            Color(0xFF021A69),
+            Color(0xFF011D3F),
+            Color(0xFF010517),
           ],
         ),
       ),

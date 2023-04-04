@@ -41,6 +41,34 @@ class _CardsStackWidgetState extends State<CardsStackWidget>
         game: 'Counter-Strike:Global Offensive',
         distance: '17 km away',
         imageAsset: 'assets/images/4.jpg'),
+    const Profile(
+        name: 'Not_blackbuck',
+        game: 'Counter-Strike:Global Offensive',
+        distance: '2 km away',
+        imageAsset: 'assets/images/2.jpg'),
+    const Profile(
+        name: 'Frantic',
+        game: 'Counter-Strike:Global Offensive',
+        distance: '3 km away',
+        imageAsset: 'assets/images/2.jpg'),
+
+    const Profile(
+        name: 'Razor',
+        game: 'Counter-Strike:Global Offensive',
+        distance: '22 km away',
+        imageAsset: 'assets/images/3.jpg'),
+    const Profile(
+        name: 'Forseken',
+        game: 'Counter-Strike:Global Offensive',
+        distance: '10 km away',
+        imageAsset: 'assets/images/forseken.jpg'),
+
+    const Profile(
+        name: 'Duke322',
+        game: 'Counter-Strike:Global Offensive',
+        distance: '17 km away',
+        imageAsset: 'assets/images/4.jpg'),
+
   ];
 
   ValueNotifier<Swipe> swipeNotifier = ValueNotifier(Swipe.none);
