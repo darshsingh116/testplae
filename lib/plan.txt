@@ -1,0 +1,17 @@
+login
+signup page
+profile page
+loading screen
+
+////backend idea///
+sort user with game
+get match-making
+swipe left or right to like/dislike
+liked users can exchange info/chat/contact/connect gaming accounts
+see who liked you
+get user location
+
+///extra features///
+connect app with steam/valorant api
+get matches according to your game rank ,time played,rating,etc
+how to connect with api\\
